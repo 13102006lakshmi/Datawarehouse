@@ -1,0 +1,12 @@
+import pandas as pd
+
+data = {
+    "Product": ["Laptop", "Mobile", "Laptop", "Tablet"],
+    "Sales": [50000, 30000, 45000, 20000]
+}
+
+df = pd.DataFrame(data)
+
+total = df["Sales"].sum()
+
+print("Total Sales =", total)
