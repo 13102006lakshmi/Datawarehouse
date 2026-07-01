@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Extract
+data = {
+    "ID": [1, 2, 3],
+    "Name": ["Ram", "Sita", "John"],
+    "Salary": [25000, 30000, 28000]
+}
+
+df = pd.DataFrame(data)
+
+# Transform
+df["Salary"] = df["Salary"] + 2000
+
+# Load
+print("Data Loaded into Warehouse")
+print(df)
