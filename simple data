@@ -1,0 +1,15 @@
+import pandas as pd
+
+data = {
+    "Region": ["North", "South", "East", "West"],
+    "Sales": [120000, 150000, 100000, 130000]
+}
+
+df = pd.DataFrame(data)
+
+print("Sales Report")
+print(df)
+
+print("\nMaximum Sales =", df["Sales"].max())
+print("Minimum Sales =", df["Sales"].min())
+print("Average Sales =", df["Sales"].mean())
